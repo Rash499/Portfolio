@@ -10,6 +10,7 @@ import { SiGnubash, SiJavascript } from "react-icons/si";
 import { FaHtml5 } from "react-icons/fa";
 import { FcLinux } from "react-icons/fc";
 import { SiCplusplus, SiTailwindcss, SiExpress, SiScala } from "react-icons/si";
+import { FaGitAlt } from "react-icons/fa6";
 
 const Technologies = () => {
   return (
@@ -26,6 +27,10 @@ const Technologies = () => {
 
             <div className='rounded-2xl border-4 border-neutral-800 p-4'>
                 <FaJava className='text-7xl text-red-700'/>
+            </div>
+
+            <div className='rounded-2xl border-4 border-neutral-800 p-4'>
+                <FaGitAlt className='text-7xl text-orange-700'/>
             </div>
 
             <div className='rounded-2xl border-4 border-neutral-800 p-4'>
