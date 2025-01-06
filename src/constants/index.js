@@ -1,13 +1,18 @@
-import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+import project1 from "../assets/projects/school_registration_system.jpg";
+import project2 from "../assets/projects/hotel_management_system.jpg";
 
-export const HERO_CONTENT = `I am an undergraduate at the University of Colombo School of Computing with a deep passion for Web Development, Automation, and Linux Kernel Development. My journey in technology is driven by a curiosity to solve complex problems and a strong desire to learn and innovate. With hands-on experience in building dynamic web applications and exploring the inner workings of Linux, I continuously strive to enhance my skills and contribute to impactful projects.`;
 
-export const ABOUT_TEXT = `I am an undergraduate at the University of Colombo School of Computing with a deep passion for Web Development, Automation, and Linux Kernel Development. My journey in technology is driven by a curiosity to solve complex problems and a strong desire to learn and innovate. With hands-on experience in building dynamic web applications and exploring the inner workings of Linux, I continuously strive to enhance my skills and contribute to impactful projects.`;
 
+export const HERO_CONTENT = `I am an undergraduate at the University of Colombo School of Computing with a deep passion for Web Development, Automation, and Linux Kernel Development.
+                             My journey in technology is driven by a curiosity to solve complex problems and a strong desire to learn and innovate. 
+                             With hands-on experience in building dynamic web applications and exploring the inner workings of Linux, I continuously strive to enhance my skills and contribute to impactful projects.`;
+
+export const ABOUT_TEXT = `
+  Hey there! I'\m a web developer and a Linux enthusiast who loves exploring new tech and finding creative solutions to problems. I am pretty familiar with C family, and I have worked on building some cool console applications along the way.
+  I'm currently working on Linux OS and diving deeper into design patterns to improve my coding practices. I am passionate about coding, automating tasks, and diving into the world of open-source. Always excited to learn, improve, and share what I know with others!
+`
 export const EXPERIENCES = [
+  /*
   {
     year: "2023 - Present",
     role: "Senior Full Stack Developer",
@@ -29,16 +34,28 @@ export const EXPERIENCES = [
     description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
     technologies: ["Python", "Svelte", "Three.js", "Postgres"],
   },
+  */
   {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
+    year: "2022 - Current",
+    role: "Web Developer",
+    company: "",
+    description: `Contributed to the development of web applications using JavaScript, React.js, PHP and Node.js. Managed databases and implemented data storage solutions using MongoDB.`,
+    technologies: ["React.js", "Node.js", "PHP", "Express.js", "Tailwind CSS", "Java Script"],
+  },
+  {
+    year: "2022 - Current",
+    role: ".Net Windows Console Applications Developer",
+    company: "",
+    description: `Developed robust .Net Windows Console applications to automate tasks,
+     streamline workflows, and process large volumes of data efficiently. 
+     Utilized C# and .Net frameworks to build command-line tools, implemented file handling, error logging, and data parsing functionalities.
+     Worked on enhancing system performance, debugging, and delivering scalable solutions for business needs.`,
+    technologies: ["C#", ".Net Framework", "SQL Server", "Bash Scripting", "Git", "MS SQL"],
   },
 ];
 
 export const PROJECTS = [
+  /*
   {
     title: "E-Commerce Website",
     image: project1,
@@ -60,17 +77,25 @@ export const PROJECTS = [
       "A personal portfolio website showcasing projects, skills, and contact information.",
     technologies: ["HTML", "CSS", "React", "Bootstrap"],
   },
+  */
   {
-    title: "Blogging Platform",
-    image: project4,
+    title: "School Registration System",
+    image: project1,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "A software application for register students and manage teacher,subjects,grades. Final project for my Diploma IT.",
+    technologies: ["C#", "MS SQL", "VS Code", ".Net Framework"],
   },
+  {
+    title: "Hotel Management System",
+    image: project2,
+    description:
+      "A software application for manage a hotel. Final project for my Java Certificate Course.",
+    technologies: ["Java", "My SQL", "Apache Netbeans", "Java Fx"],
+  }
 ];
 
 export const CONTACT = {
-  address: "767 Fifth Avenue, New York, NY 10153 ",
-  phoneNo: "+12 4555 666 00 ",
-  email: "me@example.com",
+  address: "Patisaragewaththa Katukurunda, Habaraduwa. ",
+  phoneNo: "+94 767 013 421 ",
+  email: "rashmikadilmin499@gmail.com.com",
 };

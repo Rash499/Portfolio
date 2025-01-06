@@ -1,5 +1,6 @@
 import React from 'react'
 import { RiReactjsLine } from 'react-icons/ri'
+import { SiArchlinux } from "react-icons/si";
 import { TbBrandCSharp } from 'react-icons/tb'
 import { SiMongodb } from 'react-icons/si'
 import { DiCss3 } from 'react-icons/di'
@@ -189,6 +190,14 @@ const Technologies = () => {
             animate="animate"
             className='rounded-2xl border-4 border-neutral-800 p-4'>
                 <SiScala className='text-7xl text-red-500'/>
+            </motion.div>
+
+            <motion.div 
+            variants={iconVariants(3)}
+            initial="initial"
+            animate="animate"
+            className='rounded-2xl border-4 border-neutral-800 p-4'>
+                <SiArchlinux className='text-7xl text-blue-500'/>
             </motion.div>
         </motion.div>
     </motion.div>
