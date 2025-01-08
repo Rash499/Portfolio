@@ -44,7 +44,7 @@ const Technologies = () => {
             variants={iconVariants(1.5)}
             initial="initial"
             animate="animate"
-             className='rounded-2xl border-4 border-neutral-800 p-4'>
+             className='rounded-2xl border-4 border-neutral-50 p-4'>
                 <RiReactjsLine className='text-7xl text-cyan-400'/>
             </motion.div>
 
@@ -52,7 +52,7 @@ const Technologies = () => {
             variants={iconVariants(2)}
             initial="initial"
             animate="animate"
-            className='rounded-2xl border-4 border-neutral-800 p-4'>
+            className='rounded-2xl border-4 border-neutral-50 p-4'>
                 <SiMongodb className='text-7xl text-green-500'/>
             </motion.div>
 
@@ -60,7 +60,7 @@ const Technologies = () => {
             variants={iconVariants(2.5)}
             initial="initial"
             animate="animate"
-            className='rounded-2xl border-4 border-neutral-800 p-4'>
+            className='rounded-2xl border-4 border-neutral-50 p-4'>
                 <FaJava className='text-7xl text-red-700'/>
             </motion.div>
 
@@ -68,7 +68,7 @@ const Technologies = () => {
             variants={iconVariants(3.5)}
             initial="initial"
             animate="animate"
-             className='rounded-2xl border-4 border-neutral-800 p-4'>
+             className='rounded-2xl border-4 border-neutral-50 p-4'>
                 <FaGitAlt className='text-7xl text-orange-700'/>
             </motion.div>
 
@@ -76,7 +76,7 @@ const Technologies = () => {
             variants={iconVariants(4)}
             initial="initial"
             animate="animate"
-            className='rounded-2xl border-4 border-neutral-800 p-4'>
+            className='rounded-2xl border-4 border-neutral-50 p-4'>
                 <SiDotnet className='text-7xl'/>
             </motion.div>
 
@@ -84,7 +84,7 @@ const Technologies = () => {
             variants={iconVariants(1.5)}
             initial="initial"
             animate="animate"
-            className='rounded-2xl border-4 border-neutral-800 p-4'>
+            className='rounded-2xl border-4 border-neutral-50 p-4'>
                 <FaNodeJs className='text-7xl text-green-500'/>
             </motion.div>
 
@@ -92,7 +92,7 @@ const Technologies = () => {
             variants={iconVariants(2)}
             initial="initial"
             animate="animate"
-            className='rounded-2xl border-4 border-neutral-800 p-4'>
+            className='rounded-2xl border-4 border-neutral-50 p-4'>
                 <FaPhp className='text-7xl text-indigo-600'/>
             </motion.div>
 
@@ -100,7 +100,7 @@ const Technologies = () => {
             variants={iconVariants(2.5)}
             initial="initial"
             animate="animate"
-            className='rounded-2xl border-4 border-neutral-800 p-4'>
+            className='rounded-2xl border-4 border-neutral-50 p-4'>
                 <FaPython className='text-7xl text-blue-600'/>
             </motion.div>
 
@@ -108,7 +108,7 @@ const Technologies = () => {
             variants={iconVariants(3)}
             initial="initial"
             animate="animate"
-            className='rounded-2xl border-4 border-neutral-800 p-4'>
+            className='rounded-2xl border-4 border-neutral-50 p-4'>
                 <TbBrandCSharp className='text-7xl text-purple-500'/>
             </motion.div>
 
@@ -116,7 +116,7 @@ const Technologies = () => {
             variants={iconVariants(3.5)}
             initial="initial"
             animate="animate"
-            className='rounded-2xl border-4 border-neutral-800 p-4'>
+            className='rounded-2xl border-4 border-neutral-50 p-4'>
                 <DiCss3 className='text-7xl text-blue-600'/>
             </motion.div>
 
@@ -124,7 +124,7 @@ const Technologies = () => {
             variants={iconVariants(4)}
             initial="initial"
             animate="animate"
-            className='rounded-2xl border-4 border-neutral-800 p-4'>
+            className='rounded-2xl border-4 border-neutral-50 p-4'>
                 <SiMysql className='text-7xl text-blue-600'/>
             </motion.div>
 
@@ -132,7 +132,7 @@ const Technologies = () => {
             variants={iconVariants(2.5)}
             initial="initial"
             animate="animate"
-            className='rounded-2xl border-4 border-neutral-800 p-4'>
+            className='rounded-2xl border-4 border-neutral-50 p-4'>
                 <SiGnubash className='text-7xl'/>
             </motion.div>
 
@@ -140,7 +140,7 @@ const Technologies = () => {
             variants={iconVariants(3)}
             initial="initial"
             animate="animate"
-            className='rounded-2xl border-4 border-neutral-800 p-4'>
+            className='rounded-2xl border-4 border-neutral-50 p-4'>
                 <FaHtml5 className='text-7xl text-orange-500'/>
             </motion.div>
 
@@ -148,7 +148,7 @@ const Technologies = () => {
             variants={iconVariants(3.5)}
             initial="initial"
             animate="animate"
-            className='rounded-2xl border-4 border-neutral-800 p-4'>
+            className='rounded-2xl border-4 border-neutral-50 p-4'>
                 <SiJavascript className='text-7xl text-yellow-300'/>
             </motion.div>
 
@@ -156,7 +156,7 @@ const Technologies = () => {
             variants={iconVariants(4)}
             initial="initial"
             animate="animate"
-            className='rounded-2xl border-4 border-neutral-800 p-4'>
+            className='rounded-2xl border-4 border-neutral-50 p-4'>
                 <FcLinux className='text-7xl text-cyan-400'/>
             </motion.div>
 
@@ -164,7 +164,7 @@ const Technologies = () => {
             variants={iconVariants(1.5)}
             initial="initial"
             animate="animate"
-            className='rounded-2xl border-4 border-neutral-800 p-4'>
+            className='rounded-2xl border-4 border-neutral-50 p-4'>
                 <SiCplusplus className='text-7xl text-blue-600'/>
             </motion.div>
 
@@ -172,7 +172,7 @@ const Technologies = () => {
             variants={iconVariants(2)}
             initial="initial"
             animate="animate"
-            className='rounded-2xl border-4 border-neutral-800 p-4'>
+            className='rounded-2xl border-4 border-neutral-50 p-4'>
                 <SiExpress className='text-7xl text-gray-500'/>
             </motion.div>
 
@@ -180,7 +180,7 @@ const Technologies = () => {
             variants={iconVariants(2.5)}
             initial="initial"
             animate="animate"
-            className='rounded-2xl border-4 border-neutral-800 p-4'>
+            className='rounded-2xl border-4 border-neutral-50 p-4'>
                 <SiTailwindcss className='text-7xl text-teal-500'/>
             </motion.div>
 
@@ -188,7 +188,7 @@ const Technologies = () => {
             variants={iconVariants(3)}
             initial="initial"
             animate="animate"
-            className='rounded-2xl border-4 border-neutral-800 p-4'>
+            className='rounded-2xl border-4 border-neutral-50 p-4'>
                 <SiScala className='text-7xl text-red-500'/>
             </motion.div>
 
@@ -196,7 +196,7 @@ const Technologies = () => {
             variants={iconVariants(3)}
             initial="initial"
             animate="animate"
-            className='rounded-2xl border-4 border-neutral-800 p-4'>
+            className='rounded-2xl border-4 border-neutral-50 p-4'>
                 <SiArchlinux className='text-7xl text-blue-500'/>
             </motion.div>
         </motion.div>
