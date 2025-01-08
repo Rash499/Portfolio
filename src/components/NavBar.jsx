@@ -12,11 +12,46 @@ const NavBar = () => {
         <img className='mx-3 w-10' src={logo} alt="logo" />
     </div>
     <div className="m-8 flex items-center justify-center gap-4 text-2xl text-white">
-        <FaLinkedin />
-        <FaGithub />
-        <FaInstagram />
-        <FaXTwitter />
+        <a
+          href="https://www.linkedin.com/in/rashmika-dilmin-a674a1265/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+          className="hover:text-blue-600"
+        >
+          <FaLinkedin />
+        </a>
 
+        <a
+          href="https://github.com/Rash499"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+          className="hover:text-blue-600"
+        >
+        <FaGithub />
+        </a>
+
+        <a
+          href="https://www.instagram.com/rashmika_dilmith/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+          className="hover:text-blue-600"
+        >
+          <FaInstagram />
+        </a>
+        
+        <a
+          href=""
+          //target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+          className="hover:text-blue-600"
+        >
+          <FaXTwitter />
+        </a>
+        
     </div>
    </nav>
   )
