@@ -1,7 +1,10 @@
 import project1 from "../assets/projects/school_registration_system.jpg";
 import project2 from "../assets/projects/hotel_management_system.jpg";
-
-
+import triptrack1 from "../assets/projects/triptrack.jpeg";
+import autoconnect from "../assets/projects/autoconnect.jpg";
+import convo from "../assets/projects/convo.jpg";
+import websecurity from "../assets/projects/websecurity.jpeg";  
+import chatapp from "../assets/projects/chatapp.jpg";
 
 export const HERO_CONTENT = `I am an undergraduate at the University of Colombo School of Computing with a deep passion for Web Development, Automation, and Linux Kernel Development.
                              My journey in technology is driven by a curiosity to solve complex problems and a strong desire to learn and innovate. 
@@ -37,13 +40,20 @@ export const EXPERIENCES = [
   */
   {
     year: "2022 - Current",
-    role: "Web Developer",
+    role: "Web Development",
     company: "",
     description: `Contributed to the development of web applications using JavaScript, React.js, PHP and Node.js. Managed databases and implemented data storage solutions using MongoDB.`,
     technologies: ["React.js", "Node.js", "PHP", "Express.js", "Tailwind CSS", "Java Script"],
   },
   {
-    year: "2022 - Current",
+    year: "2023 - Current",
+    role: "Linux Kernel Development",
+    company: "",
+    description: `Engaged in Linux kernel development, low-level systems programming, and automation—building a deeper understanding of operating system internals and performance tuning.`,
+    technologies: ["C", "C++", "Rust", "Bash Scripting", "Git", "GCC", "Makefile"],
+  },
+  {
+    year: "2022 - 2023",
     role: ".Net Windows Console Applications Developer",
     company: "",
     description: `Developed robust .Net Windows Console applications to automate tasks,
@@ -78,6 +88,34 @@ export const PROJECTS = [
     technologies: ["HTML", "CSS", "React", "Bootstrap"],
   },
   */
+ {
+    title: "TripTrack - Automated Bus Management System",
+    image: triptrack1,
+    description:
+      "An MVC based bus management system with real-time seat booking, secure payments, QR-coded tickets, and email alerts. Includes role-based dashboards for passengers, employees, and admins, along with booking validation, live seat availability checks, and a feedback system to improve service quality.",
+    technologies: ["PHP", "MVC", "HTML", "CSS", "JavaScript", "MySQL"],
+  },
+  {
+    title: "AutoConnect - Vehicle Service System (Ongoing)",
+    image: autoconnect,
+    description:
+      "A comprehensive MERN stack-based vehicle service system integrating service centers, insurance companies, and vehicle trading. Features role-based dashboards and detailed vehicle history reports for efficient operations.",
+    technologies: ["MongoDB", "Express", "React", "Node.js"],
+  },
+  {
+    title: "Convo - Mobile Chat Application",
+    image: chatapp,
+    description:
+      "A cross-platform chat app built with Flutter and Firebase, offering secure authentication, real-time messaging, media sharing, and instant connections via QR code scanning.",
+    technologies: ["Flutter", "Firebase Auth", "Cloud Firestore", "Firebase Storage"],
+  },
+  {
+    title: "RustJWT - Authentication System (Mini-Project)",
+    image: websecurity,
+    description:
+      "A lightweight authentication system built in Rust using JWT for secure user login and token-based authorization.",
+    technologies: ["Rust", "JWT"],
+  },
   {
     title: "School Registration System",
     image: project1,
@@ -95,7 +133,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "Patisaragewaththa Katukurunda, Habaraduwa. ",
-  phoneNo: "+94 767 013 421 ",
+  address: "Colombo, SriLanka",
+  phoneNo: "+94 767 013 421",
   email: "rashmikadilmin499@gmail.com.com",
 };
