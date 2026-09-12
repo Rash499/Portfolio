@@ -1,4 +1,3 @@
-import React from 'react'
 import aboutImg from "../assets/archlinux3.png"
 import { ABOUT_TEXT } from '../constants'
 import {motion} from "framer-motion"

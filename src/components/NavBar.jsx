@@ -1,9 +1,6 @@
-import React from 'react'
 import logo from "../assets/RDlogo.jpg"
 import {FaLinkedin} from "react-icons/fa";
 import {FaGithub} from "react-icons/fa";
-import {FaXTwitter} from "react-icons/fa6";
-import {FaInstagram} from "react-icons/fa";
 
 const NavBar = () => {
   return (
@@ -16,7 +13,7 @@ const NavBar = () => {
           href="https://www.linkedin.com/in/rashmika-dilmin-a674a1265/"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="LinkedIn"
+          aria-label="GitHub"
           className="hover:text-blue-600"
         >
           <FaLinkedin />
@@ -32,26 +29,6 @@ const NavBar = () => {
         <FaGithub />
         </a>
 
-        <a
-          href="https://www.instagram.com/rashmika_dilmith/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="LinkedIn"
-          className="hover:text-blue-600"
-        >
-          <FaInstagram />
-        </a>
-        
-        <a
-          href=""
-          //target="_blank"
-          rel="noopener noreferrer"
-          aria-label="LinkedIn"
-          className="hover:text-blue-600"
-        >
-          <FaXTwitter />
-        </a>
-        
     </div>
    </nav>
   )

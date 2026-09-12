@@ -1,139 +1,143 @@
-import project1 from "../assets/projects/school_registration_system.jpg";
-import project2 from "../assets/projects/hotel_management_system.jpg";
-import triptrack1 from "../assets/projects/triptrack.jpeg";
-import autoconnect from "../assets/projects/autoconnect.jpg";
-import convo from "../assets/projects/convo.jpg";
-import websecurity from "../assets/projects/websecurity.jpeg";  
-import chatapp from "../assets/projects/chatapp.jpg";
+export const HERO_CONTENT = `Cloud Security Engineer with professional experience and a Computer Science background focused on Azure infrastructure, cloud operations, DevOps practices, and automation. Experienced in designing secure and scalable cloud environments, implementing Infrastructure as Code with Terraform, and automating deployments through CI/CD pipelines.`;
 
-export const HERO_CONTENT = `I am an undergraduate at the University of Colombo School of Computing with a deep passion for Web Development, Automation, and Linux Kernel Development.
-                             My journey in technology is driven by a curiosity to solve complex problems and a strong desire to learn and innovate. 
-                             With hands-on experience in building dynamic web applications and exploring the inner workings of Linux, I continuously strive to enhance my skills and contribute to impactful projects.`;
+export const ABOUT_TEXT = `I build reliable, scalable, and secure cloud architectures across Azure and hybrid environments. My experience includes Azure Virtual Desktop, secure networking, monitoring, threat detection, infrastructure automation, and system administration. I also work with Kubernetes fundamentals, containerized deployments, RESTful APIs, MERN and PHP MVC applications, and programming in C, C++, Rust, and Python.`;
 
-export const ABOUT_TEXT = `
-  Hey there! I'\m a web developer and a Linux enthusiast who loves exploring new tech and finding creative solutions to problems. I am pretty familiar with C family, and I have worked on building some cool console applications along the way.
-  I'm currently working on Linux OS and diving deeper into design patterns to improve my coding practices. I am passionate about coding, automating tasks, and diving into the world of open-source. Always excited to learn, improve, and share what I know with others!
-`
 export const EXPERIENCES = [
-  /*
   {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
+    year: "November 2025 - June 2026",
+    role: "Trainee Cloud Security Engineer",
+    company: "ITX360",
+    description:
+      "Worked with Microsoft Azure on secure infrastructure design and deployment across hybrid cloud and on-premises environments. Implemented and managed Azure Virtual Desktop environments, troubleshooting logging issues in AVD and Azure AD. Designed secure Azure network solutions with VPN tunneling and routing, integrated KQL with AnalitiQ360 for monitoring and log analysis, and applied identity, access control, NSG, and threat protection best practices. Utilized Azure Front Door, Microsoft Sentinel, Microsoft Defender for Cloud, and Application Gateway for security, monitoring, and threat detection.",
+    technologies: [
+      "Microsoft Azure",
+      "Azure Virtual Desktop",
+      "KQL",
+      "AnalitiQ360",
+      "Microsoft Sentinel",
+      "Microsoft Defender for Cloud",
+      "Azure Front Door",
+      "Application Gateway",
+    ],
+  },
+];
+
+export const EDUCATION = [
+  {
+    period: "May 2023 - May 2026",
+    qualification: "BSc in Computer Science",
+    institution: "University of Colombo School of Computing",
+    result: "GPA 3.11",
   },
   {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
+    period: "2022 - 2023",
+    qualification: "Diploma in Information Technology",
+    institution: "Esoft Metro Campus",
+    result: "Merit Pass",
   },
   {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
+    period: "2018 - 2021",
+    qualification: "G.C.E. Advanced Level - Physical Science Stream",
+    institution: "Richmond College Galle",
+    result: "2A's 1B (Z-score 1.7025)",
   },
-  */
+];
+
+export const CERTIFICATIONS = [
+  "Microsoft Certified: Azure Network Engineer Associate (AZ-700)",
+  "Microsoft Certified: DevOps Engineer Expert (AZ-400)",
+  "Microsoft Certified: Azure Administrator Associate (AZ-104)",
+];
+
+export const SKILLS = [
   {
-    year: "2022 - Current",
-    role: "Web Development",
-    company: "",
-    description: `Contributed to the development of web applications using JavaScript, React.js, PHP and Node.js. Managed databases and implemented data storage solutions using MongoDB.`,
-    technologies: ["React.js", "Node.js", "PHP", "Express.js", "Tailwind CSS", "Java Script"],
-  },
-  {
-    year: "2023 - Current",
-    role: "Linux Kernel Development",
-    company: "",
-    description: `Engaged in Linux kernel development, low-level systems programming, and automation—building a deeper understanding of operating system internals and performance tuning.`,
-    technologies: ["C", "C++", "Rust", "Bash Scripting", "Git", "GCC", "Makefile"],
+    category: "DevOps & Cloud",
+    items: ["Kubernetes (Minikube)", "Docker", "Terraform", "CI/CD Automation", "Ansible", "AWS", "Azure DR"],
   },
   {
-    year: "2022 - 2023",
-    role: ".Net Windows Console Applications Developer",
-    company: "",
-    description: `Developed robust .Net Windows Console applications to automate tasks,
-     streamline workflows, and process large volumes of data efficiently. 
-     Utilized C# and .Net frameworks to build command-line tools, implemented file handling, error logging, and data parsing functionalities.
-     Worked on enhancing system performance, debugging, and delivering scalable solutions for business needs.`,
-    technologies: ["C#", ".Net Framework", "SQL Server", "Bash Scripting", "Git", "MS SQL"],
+    category: "System Administration",
+    items: [
+      "UNIX/Linux & Windows",
+      "Windows Server Administration",
+      "Active Directory",
+      "Group Policy",
+      "Server/User Management",
+      "Linux Administration",
+      "RAID/LVM",
+      "Shell Scripting",
+      "FTP Setup",
+      "System Monitoring",
+    ],
+  },
+  {
+    category: "Networking & Security",
+    items: [
+      "TCP/IP",
+      "DNS",
+      "DHCP",
+      "SSH",
+      "Routing",
+      "VPNs",
+      "Azure Virtual Networks",
+      "NSGs",
+      "Firewalls",
+      "Azure Front Door",
+      "Application Gateway",
+      "Backups",
+      "Microsoft Defender for Cloud",
+    ],
+  },
+  {
+    category: "Web Development & Programming",
+    items: ["MERN Stack", "PHP (MVC)", "RESTful APIs", "RDBMS", "MySQL", "C", "C++", "Rust", "Python"],
+  },
+  {
+    category: "Other Skills",
+    items: ["Collaboration", "Communication", "Adaptability"],
   },
 ];
 
 export const PROJECTS = [
-  /*
   {
-    title: "E-Commerce Website",
-    image: project1,
+    title: "Azure Virtual Desktop with Hub-and-Spoke Architecture",
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "Designed and deployed a production-ready Azure Virtual Desktop environment with AD/DC setup, AVD golden images, FSLogix profiles, scaling plans, VPN tunneling, log monitoring, backups, and MFA/SSO for secure and compliant access.",
+    technologies: ["Azure", "OpenVPN", "FSLogix", "Windows Server 2022", "Windows 10"],
   },
   {
-    title: "Task Management App",
-    image: project2,
+    title: "Azure Security Assessment",
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+      "Performed an Azure security assessment by applying Microsoft Defender for Cloud recommendations, remediating vulnerabilities, configuring RBAC and NSG rules, enabling encryption at host, and securing resources with Microsoft Defender for Endpoint, Azure Update Manager, and Private Endpoints.",
+    technologies: ["Azure", "Microsoft Defender for Cloud", "Elastic Stack"],
   },
   {
-    title: "Portfolio Website",
-    image: project3,
+    title: "Azure Landing Zones Design and Implementation",
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
-  },
-  */
- {
-    title: "TripTrack - Automated Bus Management System",
-    image: triptrack1,
-    description:
-      "An MVC based bus management system with real-time seat booking, secure payments, QR-coded tickets, and email alerts. Includes role-based dashboards for passengers, employees, and admins, along with booking validation, live seat availability checks, and a feedback system to improve service quality.",
-    technologies: ["PHP", "MVC", "HTML", "CSS", "JavaScript", "MySQL"],
+      "Designed an Azure Landing Zone with hub-and-spoke networking, Azure Policy governance, security baselines, and centralized logging through Log Analytics Workspace.",
+    technologies: ["Azure"],
   },
   {
-    title: "AutoConnect - Vehicle Service System (Ongoing)",
-    image: autoconnect,
+    title: "High Availability Web Cluster",
     description:
-      "A comprehensive MERN stack-based vehicle service system integrating service centers, insurance companies, and vehicle trading. Features role-based dashboards and detailed vehicle history reports for efficient operations.",
-    technologies: ["MongoDB", "Express", "React", "Node.js"],
+      "Designed a high availability web cluster using Apache Tomcat and Keepalived with MySQL and SQLite database integration to support reliable application uptime.",
+    technologies: ["Apache Tomcat", "Keepalived", "MySQL", "SQLite", "Linux"],
   },
   {
-    title: "Convo - Mobile Chat Application",
-    image: chatapp,
+    title: "UEBA Dashboard",
     description:
-      "A cross-platform chat app built with Flutter and Firebase, offering secure authentication, real-time messaging, media sharing, and instant connections via QR code scanning.",
-    technologies: ["Flutter", "Firebase Auth", "Cloud Firestore", "Firebase Storage"],
+      "Developed a UEBA dashboard using KQL and Azure Log Analytics, integrating Microsoft Sentinel's machine-learning-based anomaly detection to trigger alerts and incidents for threat identification.",
+    technologies: ["Microsoft Azure", "Microsoft Sentinel", "AnalitiQ360"],
   },
   {
-    title: "RustJWT - Authentication System (Mini-Project)",
-    image: websecurity,
+    title: "Multi-Environment Infrastructure Automation",
     description:
-      "A lightweight authentication system built in Rust using JWT for secure user login and token-based authorization.",
-    technologies: ["Rust", "JWT"],
+      "Implemented Infrastructure as Code using Azure, Terraform, and AKS with CI/CD pipelines for automated provisioning and reusable modules for environment-specific deployments.",
+    technologies: ["Azure", "Terraform", "AKS", "Azure DevOps", "Git"],
   },
-  {
-    title: "School Registration System",
-    image: project1,
-    description:
-      "A software application for register students and manage teacher,subjects,grades. Final project for my Diploma IT.",
-    technologies: ["C#", "MS SQL", "VS Code", ".Net Framework"],
-  },
-  {
-    title: "Hotel Management System",
-    image: project2,
-    description:
-      "A software application for manage a hotel. Final project for my Java Certificate Course.",
-    technologies: ["Java", "My SQL", "Apache Netbeans", "Java Fx"],
-  }
 ];
 
 export const CONTACT = {
-  address: "Colombo, SriLanka",
-  phoneNo: "+94 767 013 421",
-  email: "rashmikadilmin499@gmail.com.com",
+  address: "Colombo, Sri Lanka",
+  phoneNo: "+94 789 373 025",
+  email: "rashmikadilmin499@gmail.com",
 };
