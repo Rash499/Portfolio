@@ -1,3 +1,4 @@
+import React from 'react'
 import { PROJECTS } from '../constants'
 import {motion} from "framer-motion"
 
@@ -13,7 +14,7 @@ const Projects = () => {
       <div>
         {PROJECTS.map((project, index) => (
           <div key={index} className='mb-8 flex flex-wrap lg:justify-center'>
-            {project.image && <motion.div
+            <motion.div
             whileInView={{opacity:1, x:0}}
             initial={{opacity: 0, x:-100}}
             transition={{duaration: 1}}
@@ -24,12 +25,12 @@ const Projects = () => {
                 height={150}
                 alt={project.title}
                 className='mb-6 roundded' />
-            </motion.div>}
+            </motion.div>
             <motion.div
             whileInView={{opacity:1, x:0}}
             initial={{opacity: 0, x:100}}
             transition={{duaration: 1}}
-             className={`w-full max-w-xl ${project.image ? "lg:w-3/4" : "lg:w-full"}`}>
+             className='w-full max-w-xl lg:w-3/4'>
               <h6 className='mb-2 font-semibold'>{project.title}</h6>
               <p className='mb-4 text-neutral-400'>{project.description}</p>
               {project.technologies.map((tech, index) => (
