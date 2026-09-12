@@ -10,6 +10,11 @@ import AZ400 from "../assets/certificates/AZ_400.png";
 import AZ700 from "../assets/certificates/AZ700.jpg";
 import CKA from "../assets/certificates/CKA.jpg";
 import Linux_Drivers from "../assets/projects/Linux_Project.png";
+import Azure_Security from "../assets/projects/Azure_Security.png";
+import Terraform from "../assets/projects/Terraform.png";
+import webcluster from "../assets/projects/Web_Cluster.png";
+import AVD1 from "../assets/projects/AVD1.png";
+import Landing_Zone from "../assets/projects/Landing_Zone.png";
 
 export const HERO_CONTENT = `I’m a Computer Science graduate specializing in DevOps, cloud infrastructure, automation, and reliable systems. My experience spans Azure cloud services, Infrastructure as Code with Terraform, CI/CD pipelines, Linux administration, containerization with Docker, and Kubernetes fundamentals. I enjoy designing scalable and secure infrastructure, automating repetitive processes, improving deployment workflows, and building systems that are easier to monitor, maintain, and operate. I’m particularly passionate about cloud engineering, DevOps practices, system reliability, and continuously learning new technologies to solve real-world infrastructure challenges.`;
 
@@ -67,7 +72,7 @@ export const PROJECTS = [
     slug: "multi-environment-infrastructure-automation",
     title: "Multi-Environment Infrastructure Automation",
     category: "DevOps / Infrastructure as Code",
-    image: null,
+    image: Terraform,
     description: "Terraform-based Azure infrastructure automation with environment-specific state, reusable modules and CI/CD pipelines.",
     technologies: ["Azure", "Terraform", "Azure DevOps", "Git", "AKS", "Key Vault"],
     overview: `A DevOps-focused Infrastructure as Code project designed to provision Azure resources consistently across development and staging environments. The project separates infrastructure configuration from manual portal operations and uses Git-based CI/CD automation to make infrastructure changes repeatable and traceable.`,
@@ -88,7 +93,7 @@ export const PROJECTS = [
     slug: "azure-virtual-desktop-hub-spoke",
     title: "Azure Virtual Desktop with Hub-and-Spoke Architecture",
     category: "Cloud Infrastructure",
-    image: triptrack1,
+    image: AVD1,
     description: "Enterprise-style Azure Virtual Desktop environment covering identity, networking, golden images, FSLogix, VPN, scaling, monitoring and secure access.",
     technologies: ["Azure", "AVD", "Windows Server 2022", "Windows 10", "OpenVPN", "FSLogix", "Entra ID"],
     overview: `Designed and deployed a production-oriented Azure Virtual Desktop environment using a hub-and-spoke architecture. The implementation combined identity, networking, session hosts, profile management, secure remote connectivity, scaling and monitoring to demonstrate how an enterprise virtual desktop platform can be operated end-to-end.`,
@@ -111,7 +116,7 @@ export const PROJECTS = [
     slug: "azure-security-assessment",
     title: "Azure Security Assessment",
     category: "Cloud Security",
-    image: websecurity,
+    image: Azure_Security,
     description: "Azure security assessment covering Defender for Cloud, RBAC, NSGs, encryption, endpoint protection, updates and private access.",
     technologies: ["Azure", "Defender for Cloud", "MDE", "RBAC", "NSG", "Private Endpoint", "Azure Update Manager"],
     overview: `A practical Azure security assessment focused on identifying and remediating common infrastructure security gaps. The work used Microsoft Defender for Cloud recommendations as a baseline and combined identity, network, endpoint, encryption and update controls to improve the security posture of cloud resources.`,
@@ -133,7 +138,7 @@ export const PROJECTS = [
     slug: "azure-landing-zone",
     title: "Azure Landing Zone Design and Implementation",
     category: "Cloud Architecture",
-    image: null,
+    image: Landing_Zone,
     description: "Governed Azure foundation using management hierarchy, hub-and-spoke networking, Azure Policy, security baselines and centralized logging.",
     technologies: ["Azure", "Management Groups", "Azure Policy", "Hub-and-Spoke", "Log Analytics"],
     overview: `Designed an Azure Landing Zone as a governed foundation for scalable cloud adoption. The architecture focuses on separating platform responsibilities, applying governance consistently, centralizing security and creating a network structure that can grow as workloads are added.`,
@@ -153,7 +158,7 @@ export const PROJECTS = [
     slug: "high-availability-web-cluster",
     title: "High Availability Web Cluster",
     category: "Linux / Systems",
-    image: project2,
+    image: webcluster,
     description: "Linux-based highly available web cluster using Apache Tomcat, Keepalived and database integration.",
     technologies: ["Linux", "Apache Tomcat", "Keepalived", "MySQL", "SQLite"],
     overview: `A university project focused on high availability and system reliability. The cluster used Linux servers, Apache Tomcat and Keepalived to reduce single points of failure while integrating database services for application data.`,
