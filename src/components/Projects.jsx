@@ -1,47 +1,34 @@
-import React from 'react'
-import { PROJECTS } from '../constants'
-import {motion} from "framer-motion"
+import React from "react";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
+import { PROJECTS } from "../constants";
 
-
-const Projects = () => {
-  return (
-    <div className='border-b border-neutral-900 pb-4'>
-      <motion.h2 
-       whileInView={{opacity:1, y:0}}
-       initial={{opacity: 0, y:-100}}
-       transition={{duaration: 0.5}}
-      className='my-20 text-center text-4xl'>Projects</motion.h2>
-      <div>
-        {PROJECTS.map((project, index) => (
-          <div key={index} className='mb-8 flex flex-wrap lg:justify-center'>
-            <motion.div
-            whileInView={{opacity:1, x:0}}
-            initial={{opacity: 0, x:-100}}
-            transition={{duaration: 1}}
-             className='w-full lg:w-1/4'>
-              <img 
-                src={project.image} 
-                width={150} 
-                height={150}
-                alt={project.title}
-                className='mb-6 roundded' />
-            </motion.div>
-            <motion.div
-            whileInView={{opacity:1, x:0}}
-            initial={{opacity: 0, x:100}}
-            transition={{duaration: 1}}
-             className='w-full max-w-xl lg:w-3/4'>
-              <h6 className='mb-2 font-semibold'>{project.title}</h6>
-              <p className='mb-4 text-neutral-400'>{project.description}</p>
-              {project.technologies.map((tech, index) => (
-                <span key={index}  className='mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-800'>{tech}</span>
-              ))}
-            </motion.div>
-          </div>
-        ))}
-      </div>
+const Projects = () => (
+  <section id="projects" className="section-pad section-border">
+    <div className="section-heading">
+      <span className="eyebrow">04 · PROJECTS</span>
+      <h2>Selected work, from <span className="gradient-text">infrastructure to applications.</span></h2>
+      <p>My portfolio now puts DevOps, cloud infrastructure, automation and reliability work first, while keeping my software and systems projects visible.</p>
     </div>
-  )
-}
+    <div className="project-grid">
+      {PROJECTS.map((project, index) => (
+        <motion.article key={project.slug} className={`project-card ${index < 4 ? "featured" : ""}`} whileHover={{ y: -6 }} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+          <div className="project-media">
+            {project.image ? <img src={project.image} alt={project.title} /> : <div className="project-placeholder"><span>DEVOPS</span><b>Infrastructure</b></div>}
+            <span className="project-number">{String(index + 1).padStart(2, "0")}</span>
+          </div>
+          <div className="project-body">
+            <span className="project-category">{project.category}</span>
+            <h3>{project.title}</h3>
+            <p>{project.description}</p>
+            <div className="tags">{project.technologies.slice(0, 5).map(t => <span key={t}>{t}</span>)}</div>
+            <Link className="project-link" to={`/projects/${project.slug}`}>View project details <FaArrowUpRightFromSquare /></Link>
+          </div>
+        </motion.article>
+      ))}
+    </div>
+  </section>
+);
 
-export default Projects
+export default Projects;

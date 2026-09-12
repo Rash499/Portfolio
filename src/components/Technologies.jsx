@@ -1,207 +1,176 @@
-import React from 'react'
-import { RiReactjsLine } from 'react-icons/ri'
-import { SiArchlinux } from "react-icons/si";
-import { TbBrandCSharp } from 'react-icons/tb'
-import { SiMongodb } from 'react-icons/si'
-import { DiCss3 } from 'react-icons/di'
-import { FaJava, FaNodeJs, FaPhp, FaPython, } from 'react-icons/fa';
-import { SiDotnet } from 'react-icons/si'
-import { SiMysql } from "react-icons/si";
-import { SiGnubash, SiJavascript } from "react-icons/si";
-import { FaHtml5 } from "react-icons/fa";
-import { FcLinux } from "react-icons/fc";
-import { SiCplusplus, SiTailwindcss, SiExpress, SiScala } from "react-icons/si";
-import { FaGitAlt } from "react-icons/fa6";
-import {motion} from "framer-motion"
+import React from "react";
+import { motion } from "framer-motion";
 
-const iconVariants = (duration) => ({
-    initial: {y:-10},
-    animate: {
-        y: [10,-10],
-        transition: {
-            duration: duration,
-            ease: "linear",
-            repeat: Infinity,
-            repeatType: "reverse",
-        },
-    },
-});
+import {
+  FaDocker,
+  FaLinux,
+  FaGitAlt,
+  FaPython,
+  FaCloud,
+  FaServer,
+  FaAws,
+} from "react-icons/fa";
+
+
+import {
+  SiTerraform,
+  SiKubernetes,
+  SiGithubactions,
+  SiAnsible,
+  SiJenkins,
+  SiGrafana,
+  SiRust,
+  SiTrivy,
+  SiJavascript,
+  SiTypescript,
+  SiMongodb,
+  SiMysql,
+  SiPostgresql,
+  SiElastic,
+  SiPrometheus,
+  SiGnubash,
+  SiC,
+  SiCplusplus,
+  SiScala,
+  SiOpenjdk,
+  SiVmware,
+  SiReact,
+  SiKotlin,
+  SiDart,
+  SiAndroidstudio,
+  SiTailwindcss,
+} from "react-icons/si";
+
+import {
+  VscAzure,
+  VscTerminalPowershell,
+} from "react-icons/vsc";
+
+
+const TECH = [
+  // Cloud & Infrastructure
+  ["Azure", VscAzure, "#0078D4"],
+  ["AWS", FaAws, "#FF9900"],
+  ["Terraform", SiTerraform, "#844FBA"],
+  ["Virtual Machines", FaServer, "#607D8B"],
+  ["VMware", SiVmware, "#607078"],
+
+  // Containers & Orchestration
+  ["Docker", FaDocker, "#2496ED"],
+  ["Kubernetes", SiKubernetes, "#326CE5"],
+
+  // CI/CD & DevOps
+  ["Azure DevOps", FaCloud, "#0078D7"],
+  ["GitHub Actions", SiGithubactions, "#2088FF"],
+  ["Jenkins", SiJenkins, "#D24939"],
+  ["GitOps", FaGitAlt, "#EF7B4D"],
+  ["Ansible", SiAnsible, "#EE0000"],
+  ["Trivy", SiTrivy, "#1904DA"],
+
+  // Monitoring & Observability
+  ["Grafana", SiGrafana, "#F46800"],
+  ["Prometheus", SiPrometheus, "#E6522C"],
+  ["Elastic Stack", SiElastic, "#005571"],
+
+  // Operating Systems & Scripting
+  ["Linux", FaLinux, "#FCC624"],
+  ["Bash", SiGnubash, "#4EAA25"],
+  ["PowerShell", VscTerminalPowershell, "#5391FE"],
+
+  // Programming
+  ["Python", FaPython, "#3776AB"],
+  ["JavaScript", SiJavascript, "#F7DF1E"],
+  ["TypeScript", SiTypescript, "#3178C6"],
+  ["Rust", SiRust, "#DEA584"],
+  ["C", SiC, "#A8B9CC"],
+  ["C++", SiCplusplus, "#00599C"],
+  ["Java", SiOpenjdk, "#ED8B00"],
+  ["Scala", SiScala, "#DC322F"],
+  ["Tailwind CSS", SiTailwindcss, "#06B6D4"],
+
+  // Databases
+  ["MongoDB", SiMongodb, "#47A248"],
+  ["MySQL", SiMysql, "#4479A1"],
+  ["PostgreSQL", SiPostgresql, "#4169E1"],
+
+  // Mobile Application Development
+  ["React Native", SiReact, "#61DAFB"],
+  ["Kotlin", SiKotlin, "#7F52FF"],
+  ["Dart", SiDart, "#0175C2"],
+  ["Android Studio", SiAndroidstudio, "#3DDC84"],
+];
+
 
 const Technologies = () => {
   return (
-    <motion.div
-    whileInView={{opacity:1, y:0}}
-    initial={{opacity: 0, y:-100}}
-    transition={{duaration: 1.5}}
-     className='border-b border-neutral-800 pb-24'>
-        <h2 className='my-20 text-center text-4xl'>Technologies</h2>
-        <motion.div 
-        whileInView={{opacity:1, x:0}}
-        initial={{opacity: 0, x:-100}}
-        transition={{duaration: 1.5}}
-        className='flex flex-wrap item-center justify-center gap-4'>
-            <motion.div
-            variants={iconVariants(1.5)}
-            initial="initial"
-            animate="animate"
-             className='rounded-2xl border-4 border-neutral-50 p-4'>
-                <RiReactjsLine className='text-7xl text-cyan-400'/>
-            </motion.div>
+    <section className="section-pad section-border">
 
-            <motion.div 
-            variants={iconVariants(2)}
-            initial="initial"
-            animate="animate"
-            className='rounded-2xl border-4 border-neutral-50 p-4'>
-                <SiMongodb className='text-7xl text-green-500'/>
-            </motion.div>
+      <div className="section-heading centered">
+        <span className="eyebrow">02 · TOOLBOX</span>
 
-            <motion.div 
-            variants={iconVariants(2.5)}
-            initial="initial"
-            animate="animate"
-            className='rounded-2xl border-4 border-neutral-50 p-4'>
-                <FaJava className='text-7xl text-red-700'/>
-            </motion.div>
+        <h2>Technologies I work with</h2>
 
-            <motion.div
-            variants={iconVariants(3.5)}
-            initial="initial"
-            animate="animate"
-             className='rounded-2xl border-4 border-neutral-50 p-4'>
-                <FaGitAlt className='text-7xl text-orange-700'/>
-            </motion.div>
+        <p>
+          Focused on cloud infrastructure, DevOps automation, containers,
+          CI/CD, observability and systems engineering.
+        </p>
+      </div>
 
-            <motion.div 
-            variants={iconVariants(4)}
-            initial="initial"
-            animate="animate"
-            className='rounded-2xl border-4 border-neutral-50 p-4'>
-                <SiDotnet className='text-7xl'/>
-            </motion.div>
 
-            <motion.div 
-            variants={iconVariants(1.5)}
-            initial="initial"
-            animate="animate"
-            className='rounded-2xl border-4 border-neutral-50 p-4'>
-                <FaNodeJs className='text-7xl text-green-500'/>
-            </motion.div>
+      <div className="tech-grid">
 
-            <motion.div 
-            variants={iconVariants(2)}
-            initial="initial"
-            animate="animate"
-            className='rounded-2xl border-4 border-neutral-50 p-4'>
-                <FaPhp className='text-7xl text-indigo-600'/>
-            </motion.div>
+        {TECH.map(([name, Icon, color], i) => (
 
-            <motion.div 
-            variants={iconVariants(2.5)}
-            initial="initial"
-            animate="animate"
-            className='rounded-2xl border-4 border-neutral-50 p-4'>
-                <FaPython className='text-7xl text-blue-600'/>
-            </motion.div>
+          <motion.div
+            key={name}
+            className="tech-card"
 
-            <motion.div 
-            variants={iconVariants(3)}
-            initial="initial"
-            animate="animate"
-            className='rounded-2xl border-4 border-neutral-50 p-4'>
-                <TbBrandCSharp className='text-7xl text-purple-500'/>
-            </motion.div>
+            initial={{
+              opacity: 0,
+              y: 15,
+            }}
 
-            <motion.div 
-            variants={iconVariants(3.5)}
-            initial="initial"
-            animate="animate"
-            className='rounded-2xl border-4 border-neutral-50 p-4'>
-                <DiCss3 className='text-7xl text-blue-600'/>
-            </motion.div>
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
 
-            <motion.div 
-            variants={iconVariants(4)}
-            initial="initial"
-            animate="animate"
-            className='rounded-2xl border-4 border-neutral-50 p-4'>
-                <SiMysql className='text-7xl text-blue-600'/>
-            </motion.div>
+            transition={{
+              delay: i * 0.025,
+              duration: 0.4,
+            }}
 
-            <motion.div 
-            variants={iconVariants(2.5)}
-            initial="initial"
-            animate="animate"
-            className='rounded-2xl border-4 border-neutral-50 p-4'>
-                <SiGnubash className='text-7xl'/>
-            </motion.div>
+            viewport={{
+              once: true,
+              amount: 0.2,
+            }}
 
-            <motion.div 
-            variants={iconVariants(3)}
-            initial="initial"
-            animate="animate"
-            className='rounded-2xl border-4 border-neutral-50 p-4'>
-                <FaHtml5 className='text-7xl text-orange-500'/>
-            </motion.div>
+            whileHover={{
+              y: -5,
+              transition: {
+                duration: 0.2,
+              },
+            }}
+          >
 
-            <motion.div 
-            variants={iconVariants(3.5)}
-            initial="initial"
-            animate="animate"
-            className='rounded-2xl border-4 border-neutral-50 p-4'>
-                <SiJavascript className='text-7xl text-yellow-300'/>
-            </motion.div>
+            <Icon
+              style={{
+                color: color,
+                fontSize: "2rem",
+              }}
+            />
 
-            <motion.div 
-            variants={iconVariants(4)}
-            initial="initial"
-            animate="animate"
-            className='rounded-2xl border-4 border-neutral-50 p-4'>
-                <FcLinux className='text-7xl text-cyan-400'/>
-            </motion.div>
+            <span>{name}</span>
 
-            <motion.div 
-            variants={iconVariants(1.5)}
-            initial="initial"
-            animate="animate"
-            className='rounded-2xl border-4 border-neutral-50 p-4'>
-                <SiCplusplus className='text-7xl text-blue-600'/>
-            </motion.div>
+          </motion.div>
 
-            <motion.div 
-            variants={iconVariants(2)}
-            initial="initial"
-            animate="animate"
-            className='rounded-2xl border-4 border-neutral-50 p-4'>
-                <SiExpress className='text-7xl text-gray-500'/>
-            </motion.div>
+        ))}
 
-            <motion.div 
-            variants={iconVariants(2.5)}
-            initial="initial"
-            animate="animate"
-            className='rounded-2xl border-4 border-neutral-50 p-4'>
-                <SiTailwindcss className='text-7xl text-teal-500'/>
-            </motion.div>
+      </div>
 
-            <motion.div 
-            variants={iconVariants(3)}
-            initial="initial"
-            animate="animate"
-            className='rounded-2xl border-4 border-neutral-50 p-4'>
-                <SiScala className='text-7xl text-red-500'/>
-            </motion.div>
+    </section>
+  );
+};
 
-            <motion.div 
-            variants={iconVariants(3)}
-            initial="initial"
-            animate="animate"
-            className='rounded-2xl border-4 border-neutral-50 p-4'>
-                <SiArchlinux className='text-7xl text-blue-500'/>
-            </motion.div>
-        </motion.div>
-    </motion.div>
-  )
-}
 
-export default Technologies
+export default Technologies;

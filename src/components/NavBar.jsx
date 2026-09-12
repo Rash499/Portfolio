@@ -1,60 +1,27 @@
-import React from 'react'
-import logo from "../assets/RDlogo.jpg"
-import {FaLinkedin} from "react-icons/fa";
-import {FaGithub} from "react-icons/fa";
-import {FaXTwitter} from "react-icons/fa6";
-import {FaInstagram} from "react-icons/fa";
+import React from "react";
+import { Link } from "react-router-dom";
+import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import logo from "../assets/RDlogo.jpg";
 
-const NavBar = () => {
-  return (
-   <nav className= 'mb-20 flex items-center justify-between py-6'>
-    <div className='flex flex-shrink-0 items-center'>
-        <img className='mx-3 w-10' src={logo} alt="logo" />
+const NavBar = () => (
+  <nav className="nav-bar">
+    <Link to="/" className="brand">
+      <img src={logo} alt="RD logo" />
+      <span>Rashmika Dilmin<span className="accent">.</span></span>
+    </Link>
+    <div className="nav-links">
+      <a href="/#about">About</a>
+      <a href="/#experience">Experience</a>
+      <a href="/#projects">Projects</a>
+      <a href="/#certifications">Certifications</a>
+      <a href="/#contact">Contact</a>
     </div>
-    <div className="m-8 flex items-center justify-center gap-4 text-2xl text-white">
-        <a
-          href="https://www.linkedin.com/in/rashmika-dilmin-a674a1265/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="LinkedIn"
-          className="hover:text-blue-600"
-        >
-          <FaLinkedin />
-        </a>
-
-        <a
-          href="https://github.com/Rash499"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="LinkedIn"
-          className="hover:text-blue-600"
-        >
-        <FaGithub />
-        </a>
-
-        <a
-          href="https://www.instagram.com/rashmika_dilmith/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="LinkedIn"
-          className="hover:text-blue-600"
-        >
-          <FaInstagram />
-        </a>
-        
-        <a
-          href=""
-          //target="_blank"
-          rel="noopener noreferrer"
-          aria-label="LinkedIn"
-          className="hover:text-blue-600"
-        >
-          <FaXTwitter />
-        </a>
-        
+    <div className="social-links">
+      <a href="https://www.linkedin.com/in/rashmika-dilmin-a674a1265/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><FaLinkedin /></a>
+      <a href="https://github.com/Rash499" target="_blank" rel="noreferrer" aria-label="GitHub"><FaGithub /></a>
+      <a href="https://www.instagram.com/rashmika_dilmith/" target="_blank" rel="noreferrer" aria-label="Instagram"><FaInstagram /></a>
     </div>
-   </nav>
-  )
-}
+  </nav>
+);
 
-export default NavBar
+export default NavBar;

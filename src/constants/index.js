@@ -2,138 +2,319 @@ import project1 from "../assets/projects/school_registration_system.jpg";
 import project2 from "../assets/projects/hotel_management_system.jpg";
 import triptrack1 from "../assets/projects/triptrack.jpeg";
 import autoconnect from "../assets/projects/autoconnect.jpg";
-import convo from "../assets/projects/convo.jpg";
-import websecurity from "../assets/projects/websecurity.jpeg";  
 import chatapp from "../assets/projects/chatapp.jpg";
+import websecurity from "../assets/projects/websecurity.jpeg";
+import UEBA from "../assets/projects/UEBA.png";
+import AZ104 from "../assets/certificates/AZ104.png";
+import AZ400 from "../assets/certificates/AZ_400.png";
+import AZ700 from "../assets/certificates/AZ700.jpg";
+import CKA from "../assets/certificates/CKA.jpg";
+import Linux_Drivers from "../assets/projects/Linux_Project.png";
 
-export const HERO_CONTENT = `I am an undergraduate at the University of Colombo School of Computing with a deep passion for Web Development, Automation, and Linux Kernel Development.
-                             My journey in technology is driven by a curiosity to solve complex problems and a strong desire to learn and innovate. 
-                             With hands-on experience in building dynamic web applications and exploring the inner workings of Linux, I continuously strive to enhance my skills and contribute to impactful projects.`;
+export const HERO_CONTENT = `I’m a Computer Science graduate specializing in DevOps, cloud infrastructure, automation, and reliable systems. My experience spans Azure cloud services, Infrastructure as Code with Terraform, CI/CD pipelines, Linux administration, containerization with Docker, and Kubernetes fundamentals. I enjoy designing scalable and secure infrastructure, automating repetitive processes, improving deployment workflows, and building systems that are easier to monitor, maintain, and operate. I’m particularly passionate about cloud engineering, DevOps practices, system reliability, and continuously learning new technologies to solve real-world infrastructure challenges.`;
 
-export const ABOUT_TEXT = `
-  Hey there! I'\m a web developer and a Linux enthusiast who loves exploring new tech and finding creative solutions to problems. I am pretty familiar with C family, and I have worked on building some cool console applications along the way.
-  I'm currently working on Linux OS and diving deeper into design patterns to improve my coding practices. I am passionate about coding, automating tasks, and diving into the world of open-source. Always excited to learn, improve, and share what I know with others!
-`
+export const ABOUT_TEXT = `My strongest interest lies in DevOps, cloud infrastructure, and reliable systems. I have hands-on experience with Microsoft Azure, Terraform, Azure DevOps, GitHub Actions, Docker, Kubernetes, Linux, networking, identity, monitoring, and cloud security. My software development background in MERN, PHP, databases, and systems programming also helps me understand applications from both development and infrastructure perspectives. I enjoy automating deployments, improving reliability, securing infrastructure, and continuously learning through hands-on projects. I’m passionate about solving infrastructure challenges and building practical solutions that bridge development and operations.`;
+
+export const FOCUS_AREAS = [
+  { label: "Cloud Infrastructure", text: "Azure architecture, networking, identity, secure access, backup and disaster recovery." },
+  { label: "DevOps & Automation", text: "Terraform IaC, CI/CD pipelines, Git-based workflows and repeatable deployments." },
+  { label: "Containers & Kubernetes", text: "Docker-based workloads and Kubernetes fundamentals with Minikube/AKS." },
+  { label: "Linux & Systems", text: "Linux administration, shell scripting, troubleshooting and systems-level development." },
+];
+
 export const EXPERIENCES = [
-  /*
   {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
+    year: "Nov 2025 — Jun 2026",
+    role: "Trainee Cloud Security Engineer",
+    company: "ITX360",
+    description: `Worked across Azure infrastructure and cloud security in hybrid environments. Supported Azure Virtual Desktop deployments, identity and access management, secure networking, VPN connectivity, logging and monitoring, Defender for Cloud, Microsoft Sentinel, and troubleshooting of production-like infrastructure. This experience strengthened my understanding of how cloud platforms, networking, security, and operations fit together.`,
+    technologies: ["Microsoft Azure", "AVD", "Terraform", "Linux", "KQL", "Microsoft Sentinel", "Defender for Cloud", "Networking"],
   },
   {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
+    year: "2023 — 2026",
+    role: "Cloud & DevOps Projects",
+    company: "University / Personal Labs",
+    description: `Built infrastructure-focused projects around Azure architecture, Terraform, CI/CD, containers, Linux, monitoring and security. These projects were used to turn theoretical cloud and DevOps concepts into practical, repeatable implementations.`,
+    technologies: ["Terraform", "Azure DevOps", "GitHub Actions", "Docker", "Kubernetes", "Linux"],
   },
   {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
+    year: "2023 — 2026",
+    role: "Linux & Systems Development",
+    company: "Personal Projects",
+    description: `Worked with C, C++, Rust and Linux kernel concepts, including kernel modules, pointers, threads and low-level system programming. This work developed a strong foundation in operating systems and Linux internals.`,
+    technologies: ["C", "C++", "Rust", "Linux Kernel", "Threads", "Bash", "Git"],
   },
-  */
   {
-    year: "2022 - Current",
+    year: "2023 — 2026",
     role: "Web Development",
-    company: "",
-    description: `Contributed to the development of web applications using JavaScript, React.js, PHP and Node.js. Managed databases and implemented data storage solutions using MongoDB.`,
-    technologies: ["React.js", "Node.js", "PHP", "Express.js", "Tailwind CSS", "Java Script"],
-  },
-  {
-    year: "2023 - Current",
-    role: "Linux Kernel Development",
-    company: "",
-    description: `Engaged in Linux kernel development, low-level systems programming, and automation—building a deeper understanding of operating system internals and performance tuning.`,
-    technologies: ["C", "C++", "Rust", "Bash Scripting", "Git", "GCC", "Makefile"],
-  },
-  {
-    year: "2022 - 2023",
-    role: ".Net Windows Console Applications Developer",
-    company: "",
-    description: `Developed robust .Net Windows Console applications to automate tasks,
-     streamline workflows, and process large volumes of data efficiently. 
-     Utilized C# and .Net frameworks to build command-line tools, implemented file handling, error logging, and data parsing functionalities.
-     Worked on enhancing system performance, debugging, and delivering scalable solutions for business needs.`,
-    technologies: ["C#", ".Net Framework", "SQL Server", "Bash Scripting", "Git", "MS SQL"],
+    company: "University/Personal Projects",
+    description: `Developed web applications using the MERN stack and PHP, working across frontend and backend development, REST APIs, database integration and application deployment. Built practical experience with React, Node.js, Express.js, MongoDB and PHP-based web technologies.`,
+    technologies: [
+      "MongoDB",
+      "Express.js",
+      "React",
+      "Node.js",
+      "PHP",
+      "JavaScript",
+      "REST APIs",
+      "Git",
+    ],
   },
 ];
 
 export const PROJECTS = [
-  /*
   {
-    title: "E-Commerce Website",
-    image: project1,
-    description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+    slug: "multi-environment-infrastructure-automation",
+    title: "Multi-Environment Infrastructure Automation",
+    category: "DevOps / Infrastructure as Code",
+    image: null,
+    description: "Terraform-based Azure infrastructure automation with environment-specific state, reusable modules and CI/CD pipelines.",
+    technologies: ["Azure", "Terraform", "Azure DevOps", "Git", "AKS", "Key Vault"],
+    overview: `A DevOps-focused Infrastructure as Code project designed to provision Azure resources consistently across development and staging environments. The project separates infrastructure configuration from manual portal operations and uses Git-based CI/CD automation to make infrastructure changes repeatable and traceable.`,
+    details: [
+      "Designed reusable Terraform modules and environment-specific configurations for consistent provisioning.",
+      "Configured Azure Storage as a remote Terraform state backend with separate state files for development and staging.",
+      "Created Azure DevOps CI/CD workflows using a self-hosted agent pool to validate, plan and apply infrastructure changes.",
+      "Used an Entra ID service principal with controlled permissions for pipeline authentication.",
+      "Integrated Azure Key Vault for handling sensitive configuration and secrets instead of hard-coding credentials.",
+      "Included AKS as an optional infrastructure component to extend the platform toward containerized workloads.",
+      "Separated Create and Destroy workflows so destructive infrastructure operations can be intentionally controlled.",
+    ],
+    architecture: "Git → Azure DevOps Pipeline → Terraform → Azure Resource Groups / Networking / Key Vault / AKS\n                                  ↘ Azure Storage (Remote Terraform State)",
+    imageSlots: ["Add Terraform architecture diagram here", "Add CI/CD pipeline screenshot here"],
+    github: "",
   },
   {
-    title: "Task Management App",
-    image: project2,
-    description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
-  },
-  {
-    title: "Portfolio Website",
-    image: project3,
-    description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
-  },
-  */
- {
-    title: "TripTrack - Automated Bus Management System",
+    slug: "azure-virtual-desktop-hub-spoke",
+    title: "Azure Virtual Desktop with Hub-and-Spoke Architecture",
+    category: "Cloud Infrastructure",
     image: triptrack1,
-    description:
-      "An MVC based bus management system with real-time seat booking, secure payments, QR-coded tickets, and email alerts. Includes role-based dashboards for passengers, employees, and admins, along with booking validation, live seat availability checks, and a feedback system to improve service quality.",
-    technologies: ["PHP", "MVC", "HTML", "CSS", "JavaScript", "MySQL"],
+    description: "Enterprise-style Azure Virtual Desktop environment covering identity, networking, golden images, FSLogix, VPN, scaling, monitoring and secure access.",
+    technologies: ["Azure", "AVD", "Windows Server 2022", "Windows 10", "OpenVPN", "FSLogix", "Entra ID"],
+    overview: `Designed and deployed a production-oriented Azure Virtual Desktop environment using a hub-and-spoke architecture. The implementation combined identity, networking, session hosts, profile management, secure remote connectivity, scaling and monitoring to demonstrate how an enterprise virtual desktop platform can be operated end-to-end.`,
+    details: [
+      "Built Azure resource groups, virtual networks and subnets for a structured infrastructure layout.",
+      "Implemented hybrid identity concepts using Active Directory Domain Services, a Domain Controller and Microsoft Entra ID integration.",
+      "Configured AVD Host Pools, Session Hosts, Application Groups and Workspaces for RemoteApp and desktop delivery.",
+      "Created and maintained a golden image for consistent Session Host deployments.",
+      "Configured FSLogix profile containers and investigated profile-related performance and access issues.",
+      "Configured VPN connectivity using OpenVPN and explored site-to-site and point-to-site networking concepts.",
+      "Applied NSG rules, private connectivity, MFA and SSO concepts to improve security.",
+      "Used Log Analytics and AVD diagnostic tables such as WVDConnections, WVDCheckpoints and WVDErrors for troubleshooting.",
+      "Configured scaling plans, backup considerations and monitoring to support operational reliability.",
+    ],
+    architecture: "On-prem / Identity → Hub VNet → Spoke VNet → AVD Host Pool → Session Hosts\n                                      ↘ Log Analytics / Monitoring\n                                      ↘ VPN / Private Endpoint",
+    imageSlots: ["Add hub-and-spoke diagram here", "Add AVD architecture diagram here", "Add troubleshooting screenshots here"],
+    github: "",
   },
   {
-    title: "AutoConnect - Vehicle Service System (Ongoing)",
-    image: autoconnect,
-    description:
-      "A comprehensive MERN stack-based vehicle service system integrating service centers, insurance companies, and vehicle trading. Features role-based dashboards and detailed vehicle history reports for efficient operations.",
-    technologies: ["MongoDB", "Express", "React", "Node.js"],
-  },
-  {
-    title: "Convo - Mobile Chat Application",
-    image: chatapp,
-    description:
-      "A cross-platform chat app built with Flutter and Firebase, offering secure authentication, real-time messaging, media sharing, and instant connections via QR code scanning.",
-    technologies: ["Flutter", "Firebase Auth", "Cloud Firestore", "Firebase Storage"],
-  },
-  {
-    title: "RustJWT - Authentication System (Mini-Project)",
+    slug: "azure-security-assessment",
+    title: "Azure Security Assessment",
+    category: "Cloud Security",
     image: websecurity,
-    description:
-      "A lightweight authentication system built in Rust using JWT for secure user login and token-based authorization.",
-    technologies: ["Rust", "JWT"],
+    description: "Azure security assessment covering Defender for Cloud, RBAC, NSGs, encryption, endpoint protection, updates and private access.",
+    technologies: ["Azure", "Defender for Cloud", "MDE", "RBAC", "NSG", "Private Endpoint", "Azure Update Manager"],
+    overview: `A practical Azure security assessment focused on identifying and remediating common infrastructure security gaps. The work used Microsoft Defender for Cloud recommendations as a baseline and combined identity, network, endpoint, encryption and update controls to improve the security posture of cloud resources.`,
+    details: [
+      "Reviewed Microsoft Defender for Cloud recommendations and prioritized remediation actions.",
+      "Improved the assessed security posture by addressing configuration and hardening gaps.",
+      "Applied least-privilege RBAC and reviewed access paths to Azure resources.",
+      "Strengthened network boundaries using NSGs and reduced unnecessary public exposure.",
+      "Evaluated Encryption at Host and considered operational downtime before enabling changes.",
+      "Worked with Microsoft Defender for Endpoint troubleshooting and endpoint protection concepts.",
+      "Used Azure Update Manager to support patching and maintenance activities.",
+      "Evaluated Private Endpoints for services that required private connectivity.",
+    ],
+    architecture: "Azure Resources → Defender for Cloud → Security Recommendations → Remediation\n          ↓\nRBAC + NSG + Encryption + Endpoint Protection + Update Management + Private Access",
+    imageSlots: ["Add security assessment screenshot here", "Add Defender for Cloud dashboard here"],
+    github: "",
   },
   {
-    title: "School Registration System",
-    image: project1,
-    description:
-      "A software application for register students and manage teacher,subjects,grades. Final project for my Diploma IT.",
-    technologies: ["C#", "MS SQL", "VS Code", ".Net Framework"],
+    slug: "azure-landing-zone",
+    title: "Azure Landing Zone Design and Implementation",
+    category: "Cloud Architecture",
+    image: null,
+    description: "Governed Azure foundation using management hierarchy, hub-and-spoke networking, Azure Policy, security baselines and centralized logging.",
+    technologies: ["Azure", "Management Groups", "Azure Policy", "Hub-and-Spoke", "Log Analytics"],
+    overview: `Designed an Azure Landing Zone as a governed foundation for scalable cloud adoption. The architecture focuses on separating platform responsibilities, applying governance consistently, centralizing security and creating a network structure that can grow as workloads are added.`,
+    details: [
+      "Designed management hierarchy concepts for separating platform and workload responsibilities.",
+      "Applied Azure Policy concepts for governance, compliance and resource configuration.",
+      "Designed a hub-and-spoke network model to centralize shared connectivity and security services.",
+      "Defined security baselines for identity, networking, resource configuration and monitoring.",
+      "Planned centralized logging using Log Analytics Workspaces.",
+      "Designed the foundation so additional application workloads can be onboarded without redesigning the entire platform.",
+    ],
+    architecture: "Management Groups\n      ↓\nSubscriptions → Hub VNet → Shared Security / Connectivity\n      ↓\nSpoke 01 / Spoke 02 / Workload VNets → Central Log Analytics",
+    imageSlots: ["Add Landing Zone architecture diagram here", "Add governance / policy diagram here"],
+    github: "",
   },
   {
-    title: "Hotel Management System",
+    slug: "high-availability-web-cluster",
+    title: "High Availability Web Cluster",
+    category: "Linux / Systems",
     image: project2,
-    description:
-      "A software application for manage a hotel. Final project for my Java Certificate Course.",
-    technologies: ["Java", "My SQL", "Apache Netbeans", "Java Fx"],
-  }
+    description: "Linux-based highly available web cluster using Apache Tomcat, Keepalived and database integration.",
+    technologies: ["Linux", "Apache Tomcat", "Keepalived", "MySQL", "SQLite"],
+    overview: `A university project focused on high availability and system reliability. The cluster used Linux servers, Apache Tomcat and Keepalived to reduce single points of failure while integrating database services for application data.`,
+    details: [
+      "Designed a multi-node Linux architecture to demonstrate service availability and failover.",
+      "Used Keepalived and virtual IP concepts to provide a resilient service endpoint.",
+      "Deployed the web application on Apache Tomcat nodes.",
+      "Integrated MySQL and SQLite depending on application data requirements.",
+      "Tested failure scenarios to understand how traffic can be redirected when a node becomes unavailable.",
+      "Strengthened practical understanding of Linux services, networking and availability engineering.",
+    ],
+    architecture: "Client → Virtual IP → Keepalived Node A / Node B → Apache Tomcat → Database",
+    imageSlots: ["Add HA cluster diagram here", "Add failover test screenshot here"],
+    github: "",
+  },
+  {
+    slug: "ueba-dashboard",
+    title: "UEBA Security Monitoring Dashboard",
+    category: "Monitoring / Security",
+    image: UEBA,
+    description: "KQL-driven monitoring dashboard integrating Azure Log Analytics and Microsoft Sentinel anomaly detection.",
+    technologies: ["Azure", "Log Analytics", "KQL", "Microsoft Sentinel", "AnalitiQ360"],
+    overview: `Developed a user and entity behavior analytics dashboard for identifying suspicious or anomalous activity from cloud and security telemetry. The project combines KQL-based analysis with Microsoft Sentinel's machine-learning-driven anomaly detection capabilities.`,
+    details: [
+      "Collected and analyzed Azure operational and security logs through Log Analytics.",
+      "Used KQL to filter, correlate and investigate relevant events.",
+      "Designed dashboard views to make abnormal behavior easier to identify and investigate.",
+      "Integrated Microsoft Sentinel anomaly detection to support alert and incident generation.",
+      "Connected security findings with operational context to improve investigation workflows.",
+      "Focused on turning raw telemetry into actionable monitoring information.",
+    ],
+    architecture: "Azure / Security Logs → Log Analytics → KQL → AnalitiQ360 Dashboard\n                                   ↘ Microsoft Sentinel → Alerts / Incidents",
+    imageSlots: ["Add UEBA dashboard screenshot here", "Add KQL query screenshot here"],
+    github: "",
+  },
+  {
+    slug: "linux-kernel-module",
+    title: "Linux Kernel Module & Systems Programming",
+    category: "Linux / Low-Level",
+    image: Linux_Drivers,
+    description: "Low-level Linux work exploring kernel modules, pointers, threads and systems programming using C and Rust.",
+    technologies: ["Linux", "C", "C++", "Rust", "Kernel Modules", "Threads", "Git"],
+    overview: `A systems-focused project area developed to understand Linux internals beyond user-space application development. The work explores kernel modules, memory and pointer concepts, threading and low-level programming workflows.`,
+    details: [
+      "Built and experimented with Linux kernel modules to understand kernel-space development.",
+      "Worked with pointers and memory-related concepts in C.",
+      "Explored thread creation and synchronization concepts.",
+      "Used GCC, Makefiles and Git-based workflows for building and versioning low-level projects.",
+      "Used Rust alongside C/C++ to compare approaches to systems programming and memory safety.",
+    ],
+    architecture: "User Space → System Calls / Kernel Interface → Linux Kernel → Kernel Module",
+    imageSlots: ["Add kernel module diagram here", "Add terminal / code screenshot here"],
+    github: "",
+  },
+  {
+    slug: "triptrack-bus-management",
+    title: "TripTrack — Automated Bus Management System",
+    category: "Software Development",
+    image: triptrack1,
+    description: "MVC-based bus management system with booking, QR tickets, payments, notifications and role-based dashboards.",
+    technologies: ["PHP", "MVC", "JavaScript", "MySQL", "HTML", "CSS"],
+    overview: `A full-stack academic project that demonstrates application development fundamentals, database design and role-based workflows. Although this project is software-development focused, it complements my infrastructure work by providing experience with the application layer that DevOps platforms support.`,
+    details: [
+      "Implemented role-based workflows for passengers, employees and administrators.",
+      "Added real-time seat availability and booking validation logic.",
+      "Implemented QR-coded ticket generation and email notification workflows.",
+      "Integrated secure payment-related application flows.",
+      "Designed MySQL-backed application data and MVC-based application structure.",
+      "Added feedback functionality to support service-quality improvements.",
+    ],
+    architecture: "Browser → PHP MVC Application → MySQL\n             ↘ Authentication / Booking / Payments / Notifications",
+    imageSlots: ["Add application architecture diagram here", "Add UI screenshots here"],
+    github: "",
+  },
+  {
+    slug: "autoconnect",
+    title: "AutoConnect — Vehicle Service System",
+    category: "Software Development",
+    image: autoconnect,
+    description: "MERN-based vehicle service platform connecting service centers, insurance and vehicle trading workflows.",
+    technologies: ["MongoDB", "Express", "React", "Node.js"],
+    overview: `A MERN stack application concept designed to bring multiple vehicle-related services into one platform. The project includes role-based workflows and vehicle history information for operational visibility.`,
+    details: [
+      "Designed role-based dashboards for different participants in the vehicle service ecosystem.",
+      "Built application flows around service centers, insurance and vehicle trading.",
+      "Used MongoDB for application data and Express/Node.js for backend services.",
+      "Used React to build the client-side interface and reusable UI components.",
+      "Structured vehicle history information to improve service and decision-making workflows.",
+    ],
+    architecture: "React Client → Express / Node.js API → MongoDB",
+    imageSlots: ["Add system architecture diagram here", "Add application screenshots here"],
+    github: "",
+  },
+  {
+    slug: "convo-chat-application",
+    title: "Convo — Mobile Chat Application",
+    category: "Mobile Development",
+    image: chatapp,
+    description: "Flutter and Firebase chat application with authentication, real-time messaging, media sharing and QR-based connections.",
+    technologies: ["Flutter", "Firebase Auth", "Cloud Firestore", "Firebase Storage"],
+    overview: `A cross-platform mobile application built to explore real-time communication and managed cloud backend services. The project uses Firebase authentication, Firestore and storage to support chat and media workflows.`,
+    details: [
+      "Implemented user authentication using Firebase Authentication.",
+      "Used Cloud Firestore for real-time chat data and message synchronization.",
+      "Used Firebase Storage for media sharing.",
+      "Added QR-based user connection functionality.",
+      "Designed the application as a cross-platform Flutter client.",
+    ],
+    architecture: "Flutter App → Firebase Auth / Firestore / Storage",
+    imageSlots: ["Add mobile UI screenshots here", "Add Firebase architecture diagram here"],
+    github: "",
+  },
+  {
+    slug: "rust-jwt-authentication",
+    title: "RustJWT — Authentication System",
+    category: "Security / Systems",
+    image: websecurity,
+    description: "Lightweight Rust authentication mini-project using JWT-based login and token authorization.",
+    technologies: ["Rust", "JWT"],
+    overview: `A small security-focused project used to explore authentication and token-based authorization using Rust. It demonstrates the core flow of issuing and validating JWT credentials.`,
+    details: [
+      "Implemented user authentication flow in Rust.",
+      "Used JSON Web Tokens for stateless authorization.",
+      "Explored token validation and protected-resource access.",
+      "Focused on understanding authentication fundamentals from a systems-oriented language.",
+    ],
+    architecture: "Client → Login → Rust Service → JWT → Protected Resources",
+    imageSlots: ["Add authentication flow diagram here", "Add code screenshot here"],
+    github: "",
+  },
+];
+
+export const CERTIFICATIONS = [
+  {
+    title: "Microsoft Certified: Azure Network Engineer Associate",
+    code: "AZ-700",
+    issuer: "Microsoft",
+    image: AZ700,
+  },
+  {
+    title: "Microsoft Certified: DevOps Engineer Expert",
+    code: "AZ-400",
+    issuer: "Microsoft",
+    image: AZ400,
+  },
+  {
+    title: "Microsoft Certified: Azure Administrator Associate",
+    code: "AZ-104",
+    issuer: "Microsoft",
+    image: AZ104,
+  },
+  {
+    title: "Certified Kubernetes Administrator",
+    code: "CKA",
+    issuer: "Kodecloud",
+    image: CKA,
+  },
 ];
 
 export const CONTACT = {
-  address: "Colombo, SriLanka",
-  phoneNo: "+94 767 013 421",
-  email: "rashmikadilmin499@gmail.com.com",
+  address: "Colombo, Sri Lanka",
+  phoneNo: "+94 789 373 025",
+  email: "rashmikadilmin499@gmail.com",
 };
